@@ -1,0 +1,117 @@
+body {
+  font-family: "Lato", sans-serif;
+  background: #cccccc7d;
+  padding: 40px;
+}
+
+.container {
+  padding: 50px 30px;
+  margin: auto;
+  border-radius: 26px;
+  background: white;
+  max-width: 920px;
+}
+
+.container li {
+  list-style: square;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.contact-button {
+  height: 46px;
+  background: black;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  width: 130px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: ease-out;
+}
+
+.contact-button:hover {
+  transition-duration: 0.3s;
+  transition-property: color, background-color;
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+#contact-me {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cfceced4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+@media (max-width: 650px) {
+  .column-container {
+    flex-direction: column;
+  }
+
+  .column1 {
+    max-width: 100%;
+  }
+
+  .column2 {
+    max-width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-button {
+    margin-top: 30px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+}
